@@ -11,6 +11,8 @@ This is a Dockerfile instructions to build a container image with **PHP-CLI** & 
 FROM gurukami/php:{tag}
 ...
 
+**Run container**
+
 {host-src} - your folder of data on host machine for mount it into guest (virtual) machine
 
 **docker run --name gurukami_php56 -d -v {host-src}:/share gurukami/php:{tag}**
