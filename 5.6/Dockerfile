@@ -33,4 +33,6 @@ WORKDIR /share
 ADD etc/php5/php-fpm.d/*.conf /opt/remi/php56/root/etc/php-fpm.d/
 ADD etc/php5/php.d/*.ini /opt/remi/php56/root/etc/php.d/
 
+EXPOSE 9000
+
 CMD ["/opt/remi/php56/root/usr/sbin/php-fpm", "-F"]

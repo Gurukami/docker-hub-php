@@ -1,6 +1,6 @@
 # About this repo
 
-This is a Dockerfile instructions to build a container image with **PHP-CLI** & **PHP-FPM** based on **Centos 7** and **Remi** package repository 
+This is a Dockerfile instructions to build a container image with **PHP-CLI** & **PHP-FPM** based on **Centos 7** and **Remi** package repository
 
 ## Usage
 
@@ -15,7 +15,7 @@ FROM gurukami/php:{tag}
 
 {host-src} - your folder of data on host machine for mount it into guest (virtual) machine
 
-**docker run --name gurukami_php56 -d -v {host-src}:/share gurukami/php:{tag}**
+**docker run --name gurukami_php56 -d -p 9000:9000 -v {host-src}:/share gurukami/php:{tag}**
 
 **Exec CLI scripts**
 ###### Remember, your files execute on guest machine and path must begin with /share relative your mounted folder on host
@@ -67,7 +67,6 @@ tag: **7.0**
 - crypto
 - geoip
 - imagick
-- jsonc
 - memcache
 - memcached
 - mongodb

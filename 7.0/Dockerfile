@@ -32,4 +32,6 @@ WORKDIR /share
 ADD etc/php7/php-fpm.d/*.conf /etc/opt/remi/php70/php-fpm.d/
 ADD etc/php7/php.d/*.ini /etc/opt/remi/php70/php.d/
 
+EXPOSE 9000
+
 CMD ["/opt/remi/php70/root/usr/sbin/php-fpm", "-F"]
