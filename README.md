@@ -1,5 +1,7 @@
 # About this repo
 
+[![Docker Stars](https://img.shields.io/docker/stars/gurukami/php.svg?style=flat)](https://hub.docker.com/r/gurukami/php/) [![Docker Pulls](https://img.shields.io/docker/pulls/gurukami/php.svg?style=flat)](https://hub.docker.com/r/gurukami/php/)
+
 This is a Dockerfile instructions to build a container image with **PHP-CLI** & **PHP-FPM** based on **Centos 7** and **Remi** package repository
 
 ## Usage
@@ -17,13 +19,14 @@ FROM gurukami/php:{tag}
 ```
 docker run --name gurukami_php56 -d -p 9000:9000 -v {host-src}:/share gurukami/php:{tag}
 ```  
-
+  
 **Exec CLI scripts**
 ###### Remember, your files execute on guest machine and path must begin with /share relative your mounted folder on host
 
 ```
 docker exec -t -i gurukami_php56 php56 /share/...path_to_file
 ```  
+  
 For more information about run command, see https://docs.docker.com/engine/reference/run/
 
 ## Versions
