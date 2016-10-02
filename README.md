@@ -82,6 +82,12 @@ tag: **7.0**
 - opcache
 - redis
 
+## Xdebug
+
+```
+xdebug.idekey=gurukami
+```
+
 ## License
 
 The MIT license  
